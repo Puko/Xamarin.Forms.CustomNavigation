@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<views:BaseView
+    x:Class="Navigation.Views.SaleView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Navigation.Views">
+    <ContentView.Content>
+        <StackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Text="Hello SaleView!"
+                VerticalOptions="Center" />
+            <Button Command="{Binding BackCommand}" Text="Go Back !" />
+            <Button Command="{Binding PresentCommand}" Text="Present !" />
+        </StackLayout>
+    </ContentView.Content>
+</views:BaseView>
