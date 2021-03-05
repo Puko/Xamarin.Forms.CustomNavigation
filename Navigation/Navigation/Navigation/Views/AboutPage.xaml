@@ -10,6 +10,9 @@
                 HorizontalOptions="CenterAndExpand"
                 Text="Welcome to About Page!"
                 VerticalOptions="CenterAndExpand" />
+
+
+            <Button Command="{Binding PopCommand}" Text="Pop"></Button>
         </StackLayout>
     </ContentPage.Content>
 </views:BasePage>

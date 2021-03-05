@@ -65,7 +65,7 @@ namespace Navigation.Services
             return _contentView.Navigation.PushModalAsync(view, false);
         }
 
-        public Task PopModalAsync<TViewModel>(Action<TViewModel> init) where TViewModel : class
+        public Task PopModalAsync()
         {
             var page = (BasePage)_contentView.Navigation.ModalStack.Last();
             page.Dispose();
